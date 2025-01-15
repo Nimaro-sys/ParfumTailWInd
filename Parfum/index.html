@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Parfum</title>
+</head>
+
+<body class="bg-pink-200 flex justify-center align-items items-center h-screen m-0 p-0">
+
+    <section class="Produit flex w-4/5 bg-pink-100 rounded-lg shadow-md">
+
+        <!-- Image -->
+        <div class="Produit__image w-1/2 h-auto overflow-hidden">
+            <img class="w-full h-full object-cover rounded-l-lg" src="./Parfum.webp" alt="Parfum">
+        </div>
+
+        <!-- Description -->
+        <div class="Produit__description w-1/2 p-5 flex flex-col justify-center text-black cursor-default">
+            <h1 class="Produit__categorie text-lg text-gray-500 font-sans mb-4 text-lg">P E R F U M E</h1>
+            <h3 class="text-xl font-semibold mb-4 text-xl">Parfum : Rose à la Rose Rose Rosé, le Parfum des Roses Rosée</h3>
+            <p class="text-base mb-4 text-gray-400">Une représentation solaire et voluptueuse, composée de Lorem Ipsum et d'extrait 
+            de fleur de rose – provenant de Chépaou, cultivé par le célèbre Chépaki. Cette œuvre d’art sublime s'inspire des éléments naturels et abstraits 
+            pour offrir une expérience sensorielle unique, fusionnant l’imaginaire et le réel dans une symbiose parfaite, où 
+            chaque détail est soigneusement conçu pour éveiller l'âme et enchanter les sens.</p>
+
+            <!-- Réduction -->
+            <div class="Produit__reduc flex gap-3 mb-4 text-lg">
+                <p class="Produit__reduc--Part1 text-green-600 font-bold">$99.99</p>
+                <p class="Produit__reduc--Part2 text-gray-400 text-sm line-through">$249.99</p>
+            </div>
+
+            <!-- Bouton -->
+            <button class="Produit__button bg-green-600 text-white py-3 px-8 rounded-lg hover:bg-green-700 transition duration-300" *
+            onclick="window.location.href='./../PMFA.com/Paimment.html'">🛒 Add to cart</button>
+        </div>
+    </section>
+
+</body>
+</html>
